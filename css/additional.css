@@ -1,0 +1,74 @@
+  /*nav*/
+ .navbar-brand {
+  font-size: 2em;
+  font-family: "Angeline Vintage_Demo";
+  color: white !important;  /*dark pink*/
+  text-shadow: 2px 2px black;
+  
+}
+
+@font-face {
+  font-family: "Angeline Vintage_Demo";
+  src: url("../font/Angeline Vintage_Demo.ttf");
+}
+
+#myName {
+	font-size: 5em;
+	font-family: "Angeline Vintage_Demo";
+	color: white !important; 	/*dark pink*/
+	text-shadow: 2px 2px black;
+	/*border:1px solid pink;*/
+	
+}
+
+@font-face {
+	font-family: "Angeline Vintage_Demo";
+	src: url("../font/Angeline Vintage_Demo.ttf");
+}
+
+.nav-link{
+  color: white !important;
+  font-size: 1em;
+  font-family: "DJB How Cute Am I";
+
+}
+
+@font-face {
+	font-family: "DJB How Cute Am I";
+	src: url("../font/DJB How Cute Am I.ttf");
+}
+
+.branding{
+  color: white !important;
+  font-size: 1em;
+  font-family: "DJB How Cute Am I";
+
+}
+
+@font-face {
+	font-family: "DJB How Cute Am I";
+	src: url("../font/DJB How Cute Am I.ttf");
+}
+
+
+/*fonts*/
+.everyTitle {
+	 font-family: "DJB How Cute Am I";
+	 font-size: 2.5em;
+}
+
+@font-face {
+	font-family: "DJB How Cute Am I";
+	src: url("../font/DJB How Cute Am I");
+}
+
+.contentFont{
+   font-family: "DJB How Cute Am I";
+
+}
+
+@font-face {
+	font-family: "DJB How Cute Am I";
+	src: url("../font/DJB How Cute Am I.ttf");
+}
+

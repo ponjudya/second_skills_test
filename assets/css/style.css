@@ -1,0 +1,130 @@
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 90px;
+  background: url(../images/bg4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  width: 100%;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  font-weight: 300;
+  color: #555;
+  margin: 30px 0;
+}
+
+strong {
+  font-weight: 600;
+  color: #333;
+}
+
+.content {
+  padding: 50px 0;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin: 30px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+/* ==========================================================
+        Navbar Styles
+   ==========================================================*/
+.navbar {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: transparent;
+  color: #333;
+  transition: all 0.3s;
+}
+.navbar a {
+  color: #212529 !important;
+  font-size: 1.5em;
+  font-family: "farewell_angelina_display_sample";
+
+}
+
+@font-face {
+	font-family: "farewell_angelina_display_sample";
+	src: url("../fonts/farewell_angelina_display_sample.ttf");
+}
+
+
+
+.navbar button {
+  color: inherit !important;
+}
+
+.navbar.compressed {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #ce0b63;
+  color: #6dcc7c;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#brandName {
+	font-size: 2em;
+	font-family: "Angeline Vintage_Demo";
+	color: white !important; 	/*dark pink*/
+	text-shadow: 2px 2px black;
+	
+}
+
+@font-face {
+	font-family: "Angeline Vintage_Demo";
+	src: url("../fonts/Angeline Vintage_Demo.ttf");
+}
+
+#myName {
+	font-size: 5em;
+	font-family: "Angeline Vintage_Demo";
+	color: #3e3737 !important; 	/*dark pink*/
+	text-shadow: 2px 2px black;
+	padding-top: 2em;
+	padding-right: 0;
+	margin-right: 0;
+	padding-left: 2em;
+	/*border:1px solid pink;*/
+	
+}
+
+@font-face {
+	font-family: "Angeline Vintage_Demo";
+	src: url("../fonts/Angeline Vintage_Demo.ttf");
+}
+
+
+/*carousel*/
+    /* Necessary for full page carousel*/
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+    /* Carousel*/
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100%;
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+          background: #1C2331!important;
+      }
+  }
+
