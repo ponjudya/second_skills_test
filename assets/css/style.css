@@ -1,130 +1,730 @@
-
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-body {
-  font-family: 'Poppins', sans-serif;
-  padding-top: 90px;
-  background: url(../images/bg4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100%;
-  width: 100%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-p {
-  font-size: 1.2em;
-  line-height: 1.8em;
-  font-weight: 300;
-  color: #555;
-  margin: 30px 0;
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; 
+  font-family: "Helvetica";
 }
 
-strong {
-  font-weight: 600;
-  color: #333;
+.w1366 {
+    width: 100%;
+	max-width: 1366px !important;
+    margin: 0 auto;
 }
 
-.content {
-  padding: 50px 0;
-}
-
-.line {
-  width: 100%;
-  height: 1px;
-  margin: 30px 0;
-  border-bottom: 1px dashed #ddd;
-}
-
-/* ==========================================================
-        Navbar Styles
-   ==========================================================*/
-.navbar {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background: transparent;
-  color: #333;
-  transition: all 0.3s;
-}
-.navbar a {
-  color: #212529 !important;
-  font-size: 1.5em;
-  font-family: "farewell_angelina_display_sample";
-
-}
+/*Fonts*/
 
 @font-face {
-	font-family: "farewell_angelina_display_sample";
-	src: url("../fonts/farewell_angelina_display_sample.ttf");
+	font-family: "Interstate";
+	src: url("../fonts/Interstate-regular.ttf");
+}
+@font-face {
+	font-family: "Helvetica";
+	src: url(../fonts/Helvetica.ttf);
+}
+@font-face {
+	font-family: "Helvetica-Bold";
+	src: url(../fonts/Helvetica-Bold.ttf);
+}
+
+.font-12 {
+	font-size: 12px !important;
+}
+
+.font-16 {
+	font-size: 16px !important;
+}
+
+.font-24 {
+	font-size: 24px !important;
+}
+/*Fonts*/
+
+/*Colors*/
+.txt-aqua {
+	color: #57b8f8;
+}
+.txt-blue {
+	color: #1a3986;
+}
+.txt-light-blue {
+	color: #1550d2;
+}
+.txt-dark {
+	color: #464646;
+}
+.txt-green {
+	color: #01a49d;
+}
+.bg-blue {
+	background-color: #001254;
+}
+.bg-gray {
+	background-color: #ebebeb;
+}
+/*Colors*/
+
+/*Borders*/
+.bb-aqua {
+	border-bottom: 10px solid #57b8f8;
+}
+.bb-blue {
+	border-bottom: 10px solid #1a3986;
+}
+.bb-light-blue {
+	border-bottom: 10px solid #1550d2;
+}
+.bb-dark {
+	border-bottom: 10px solid #464646;
+}
+.bb-green {
+	border-bottom: 10px solid #01a49d;
+}
+/*Borders*/
+
+/*btn*/
+.btn-outlined {
+	color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    padding: 5px 20px;
+}
+
+.btn-outlined:hover {
+	color: #1340a5;
+    background-color: #fff;
+}
+/*btn*/
+
+
+/*Margins*/
+.mb-25 {
+	margin-bottom: 25px !important;
+}
+
+/*Header*/
+#header {
+    font-family: "Helvetica";
+    border-bottom: 10px solid #001254;
+}
+
+#header .logo {
+    position: relative;
+    bottom: -5px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 180px;
+}
+
+.header-container .link-item-title {
+	font-family: "Interstate";
+	padding: 0px 10px;
+    border-right: 2px solid #e2e2e2;
+}
+
+
+.header-container .link-item-title p {
+	font-size: 14px;
+    font-weight: 600;
+}
+
+.header-container .link-item-title p:last-child {
+	font-size: 36px;
+	line-height: 26px;
+}
+
+.header-container .link-item {
+	padding: 0 20px;
+	color: #464646;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.header-container .link-item img {
+	width: 100px;
+}
+/*Header*/
+
+/*Section1*/
+#main_banner {
+	background-image: url(../images/acme-home_08.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 390px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_banner .col-sm-12 {
+    padding: 0 180px;
+}
+
+#main_banner h4 {
+	font-family: "Helvetica-Bold";
+	font-size: 32px;
+}
+
+#main_banner p {
+	font-size: 20px;
+	font-family: "Helvetica";
+}
+/*Section1*/
+
+/*Section2*/
+#main_insights {
+	background-color: #ebebeb;
+	padding: 20px 0;
+}
+
+#main_insights h5 {
+	font-size: 22px;
+}
+
+#main_insights p {
+	font-size: 12px;
+}
+
+#main_insights .col-sm-12 {
+	padding: 0 180px;
+}
+
+#main_insights .img-container {
+	background-color: #fff;
+	padding: 15px;
+}
+
+#main_insights img {
+	width: 100%;
+}
+
+#main_insights .img-container p {
+	font-family: "Helvetica-Bold";
+	font-size: 22px;
+}
+
+
+/*Section3*/
+#main_contact {
+	background-image: url(../images/acme-home_20.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 390px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main_contact .col-sm-12 {
+    padding: 0 180px;
+}
+
+#main_contact h4 {
+	font-family: "Helvetica-Bold";
+	font-size: 32px;
+}
+
+#main_contact p {
+	font-size: 16px;
+	font-family: "Helvetica";
+}
+
+/*Section3*/
+
+
+/*Section4*/
+#main_events {
+	background-color: #ebebeb;
+	padding: 20px 0;
+}
+
+#main_events h5 {
+	font-size: 22px;
+}
+
+#main_events p {
+	font-size: 12px;
+}
+
+#main_events .col-sm-12 {
+	padding: 0 180px;
+}
+
+#main_events .img-container {
+	/*background-color: #fff;
+	padding: 15px;*/
+	position: relative;
+}
+
+#main_events img {
+	width: 100%;
+}
+
+#main_events .img-container p {
+	font-family: "Helvetica-Bold";
+	font-size: 22px;
+	color: #171717;
+}
+
+#main_events .date {
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    color: #fafafa !important;
+    line-height: 20px;
+    text-align: center;
+}
+
+#main_events .location {
+	position: absolute;
+    bottom: -15px;
+    right: 0px;
+}
+
+#main_events .content {
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    transform: translateX(-50%);
+    color: #fff !important;
+}
+/*Section 4*/
+
+/*Footer*/
+footer {
+	background-color: #707070;
+	color: #bbbbbb;
+	font-size: 12px;
+	padding: 10px;
+}
+
+#footer .col-sm-12 {
+	padding: 0 180px;
+}
+
+#footer .social {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#footer .social img {
+	padding: 5px;
+}
+/*Footer*/
+
+.sm-show,
+.md-show {
+	display: none !important;
 }
 
 
 
-.navbar button {
-  color: inherit !important;
+/****************************** Media queries *****************************/
+
+
+/* 1366 */
+@media only screen and (max-width: 1366px) {
+	.w1366 {
+		max-width: 1200px;
+	}
+	.sm-show {
+		display: none !important;
+	}
+	.sm-hide {
+		display: block !important;
+	}
+	.header-container .link-item-title p:last-child {
+		font-size: 20px;
+	}
+	.header-container .link-item img {
+		width: 80px;
+	}
 }
 
-.navbar.compressed {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: #ce0b63;
-  color: #6dcc7c;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-}
 
-#brandName {
-	font-size: 2em;
-	font-family: "Angeline Vintage_Demo";
-	color: white !important; 	/*dark pink*/
-	text-shadow: 2px 2px black;
+/* md */
+@media only screen and (max-width: 991px) {
+
+	.header-container {
+		display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    padding: 10px;
+	}
 	
-}
+	#main_banner .col-sm-12, 
+	#main_insights .col-sm-12, 
+	#main_contact .col-sm-12,
+	#main_events .col-sm-12,
+	#footer .col-sm-12
+	{
+		padding: 0 40px;
+	}
+	/*Section 4*/
 
-@font-face {
-	font-family: "Angeline Vintage_Demo";
-	src: url("../fonts/Angeline Vintage_Demo.ttf");
-}
-
-#myName {
-	font-size: 5em;
-	font-family: "Angeline Vintage_Demo";
-	color: #3e3737 !important; 	/*dark pink*/
-	text-shadow: 2px 2px black;
-	padding-top: 2em;
-	padding-right: 0;
-	margin-right: 0;
-	padding-left: 2em;
-	/*border:1px solid pink;*/
+	#main_events .date {
+	    position: absolute;
+	    top: 0px;
+	    left: 40px;
+	}
 	
+
+	/*Section5*/
+	#mobile_contact_us {
+		background-color: #cccccc;
+		padding: 10px 20px;
+	}	
+
+	#mobile_contact_us .site-links {
+		padding: 15px;
+		border-bottom: 1px solid #999999;
+	}
+
+	#mobile_contact_us .site_upper {
+	    display: flex;
+	    justify-content: space-between;
+	    margin: 0;
+	}
+
+	#mobile_contact_us p {
+	    color: #223581;
+	    margin-bottom: 0 !important;
+	    text-align: center;
+	}
+
+	#mobile_contact_us ul li {
+	    list-style: none;
+	    text-align: center;
+	    background-color: #ebecf0;
+	    padding: 15px;
+        margin: 10px 0;
+	}
+
+	#mobile_contact_us ul li a {
+		color: #707070 !important;
+		text-decoration: none;
+	}
+
+	/*Section5*/
+
+	.md-hide {
+		display: none !important;
+	}
+	.md-show {
+		display: block !important;
+	}
+	.sm-show {
+		display: none !important;
+	}
 }
 
-@font-face {
-	font-family: "Angeline Vintage_Demo";
-	src: url("../fonts/Angeline Vintage_Demo.ttf");
+@media only screen and (max-width: 768px) {
+	.sm-show {
+		display: none !important; 
+	}
 }
+/* sm */
+@media only screen and (max-width: 475px) {
+
+	/*header*/
+	#mobile_header {
+		background-color: #ebecf0;
+	}
+
+	#mobile_header .mobile-header-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+
+	#mobile_header .mobile-header-container img {
+		width: 200px;
+	}
+
+	#mobile_header .mobile-header-container .hamburger {
+	    position: absolute;
+	    right: 20px;
+	}
+
+	#mobile_header .mobile-header-container a i {
+		color: #1a398c;
+	}
+
+	#mobile_header .container {
+	  	display: inline-block;
+	  	cursor: pointer;
+	}
+
+	#mobile_header .bar1, .bar2, .bar3 {
+	  	width: 28px;
+	    height: 3px;
+	    background-color: #193989;
+	    margin: 6px 0;
+	    transition: 0.4s;
+	}
+
+	#mobile_header .change .bar1 {
+	  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	  transform: rotate(-45deg) translate(-4px, 6px);
+	}
+
+	#mobile_header .change .bar2 {opacity: 0;}
+
+	#mobile_header .change .bar3 {
+	  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+	  transform: rotate(45deg) translate(-7px, -8px);
+	}
 
 
-/*carousel*/
-    /* Necessary for full page carousel*/
-    html,
-    body,
-    header,
-    .view {
-      height: 100%;
-    }
+	#menu_options {
+		background-color: #ffffff;
+		padding: 10px 20px;
+		display: none;
+	}	
 
-    /* Carousel*/
-    .carousel,
-    .carousel-item,
-    .carousel-item.active {
-      height: 100%;
-    }
-    .carousel-inner {
-      height: 100%;
-    }
+	#menu_options .site-links {
+		padding: 15px;
+		border-bottom: 1px solid #bebebe;
+	}
 
-    @media (min-width: 800px) and (max-width: 850px) {
-      .navbar:not(.top-nav-collapse) {
-          background: #1C2331!important;
-      }
-  }
+	#menu_options p {
+	    color: #223581;
+	    margin-bottom: 0 !important;
+	    text-align: center;
+	}
 
+	#menu_options ul li {
+	    list-style: none;
+	    text-align: center;
+	    background-color: #ebebeb;
+	    padding: 15px;
+        margin: 10px 0;
+	}
+
+	#menu_options ul li a {
+		color: #707070 !important;
+		text-decoration: none;
+	}
+
+	body.overlay {
+		background-color: rgb(37 34 34 / 32%);
+	}
+	/*header*/
+
+
+	/*Section1*/
+	#mobile_banner {
+		background-color: #1b9cf8;
+	    min-height: 390px;
+	    color: #fff;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	#mobile_banner .col-sm-12 {
+	    padding: 30px;
+	}
+
+	#mobile_banner h4 {
+		font-family: "Helvetica-Bold";
+		font-size: 32px;
+		border-bottom: 5px dotted rgb(255 255 255 / 67%);
+	}
+
+	#mobile_banner p {
+		font-size: 18px;
+		font-family: "Helvetica";
+	}
+	/*Section1*/
+
+
+	/*Section2*/
+	#mobile_insights {
+		background-color: #001a7b;
+		padding: 30px;
+		color: #fff;
+	}
+
+	#mobile_insights h5 {
+		font-size: 22px;
+	}
+
+	#mobile_insights p {
+		font-size: 12px;
+	}
+
+	#mobile_insights .img-container {
+		background-color: #fff;
+		padding: 15px;
+	}
+
+	#mobile_insights img {
+		width: 100%;
+	}
+
+	#mobile_insights .img-container p {
+		font-family: "Helvetica-Bold";
+		font-size: 22px;
+	}
+
+
+	/*Section3*/
+	#mobile_contact {
+		background-image: url(../images/acme-home_20.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    min-height: 390px;
+	    color: #fff;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    text-align: center;
+	}
+
+	#mobile_contact .col-sm-12 {
+	    padding: 30px;
+	}
+
+	#mobile_contact h4 {
+		font-family: "Helvetica-Bold";
+		font-size: 32px;
+	}
+
+	#mobile_contact p {
+		font-size: 16px;
+		font-family: "Helvetica";
+	}
+
+	/*Section3*/
+
+
+	/*Section4*/
+	#mobile_events {
+		background-color: #ebebeb;
+		padding: 30px;
+	}
+
+	#mobile_events h5 {
+		font-size: 22px;
+	}
+
+	#mobile_events p {
+		font-size: 12px;
+	}
+
+	#mobile_events .img-container {
+		position: relative;
+	}
+
+	#mobile_events img {
+		width: 100%;
+	}
+
+	#mobile_events .mobile-logo {
+		text-align: center;
+	}
+
+	#mobile_events .mobile-logo img {
+		width: 80px;
+	}
+
+	#mobile_events .img-container p {
+		font-family: "Helvetica-Bold";
+		font-size: 22px;
+		color: #171717;
+	}
+
+	#mobile_events .date {
+	    position: absolute;
+	    top: 0px;
+	    left: 35px;
+	    color: #fafafa !important;
+	    line-height: 20px;
+	    text-align: center;
+	}
+
+	#mobile_events .date span {
+		color: #01a49d;
+	}
+
+	#mobile_events .location {
+		position: absolute;
+	    bottom: -15px;
+	    right: 0px;
+	    color: #676767 !important;
+	}
+
+	#mobile_events .content {
+	    position: absolute;
+	    top: 30%;
+	    left: 38%;
+	    transform: translateX(-50%);
+	    color: #fff !important;
+	}
+	/*Section 4*/
+	
+
+	/*Section5*/
+	#mobile_contact_us {
+		background-color: #cccccc;
+		padding: 10px 20px;
+	}	
+
+	#mobile_contact_us .site-links {
+		padding: 15px;
+		border-bottom: 1px solid #999999;
+	}
+
+	#mobile_contact_us .site_upper {
+	    display: flex;
+	    justify-content: space-between;
+	    margin: 0;
+	}
+
+	#mobile_contact_us p {
+	    color: #223581;
+	    margin-bottom: 0 !important;
+	    text-align: center;
+	}
+
+	#mobile_contact_us ul li {
+	    list-style: none;
+	    text-align: center;
+	    background-color: #ebecf0;
+	    padding: 15px;
+        margin: 10px 0;
+	}
+
+	#mobile_contact_us ul li a {
+		color: #707070 !important;
+		text-decoration: none;
+	}
+
+	/*Section5*/
+
+	.sm-hide {
+		display: none !important;
+	}
+	.sm-show {
+		display: block !important;
+	}
+	.md-show {
+		display: none !important;
+	}
+}
